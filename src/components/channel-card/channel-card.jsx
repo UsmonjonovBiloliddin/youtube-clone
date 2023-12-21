@@ -3,7 +3,6 @@ import { Box, CardContent, CardMedia, Typography } from '@mui/material';
 import React from 'react'
 
 const ChannelCard = ({video}) => {
-    console.log(video);
   return (
     <Box
       sx={{

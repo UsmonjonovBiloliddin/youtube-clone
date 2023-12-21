@@ -9,16 +9,19 @@ import {
 import { colors } from "../../constants/colors";
 import moment from "moment";
 import { CheckCircle } from "@mui/icons-material";
+import { Link } from "react-router-dom";
 
 const VideoCard = ({ video }) => {
- 
   return (
-    <Card sx={{width:{xs:'100%', sm:'300px', md: '340px'}}}>
-      <CardMedia
-        image={video?.snippet?.thumbnails?.high?.url}
-        alt={video?.snippet?.title}
-        sx={{ width: "100%", height: "180px" }}
-      />
+    <Card sx={{ width: { xs: '100%', sm: '300px', md: '340px' } }}>
+      <Link to={`/video/${video.id.videoId}`}>
+        <CardMedia
+          image={video?.snippet?.thumbnails?.high?.url}
+          alt={video?.snippet?.title}
+          sx={{ width: "100%", height: "180px" }}
+        />
+      </Link>
+
 
       <CardContent
         sx={{
