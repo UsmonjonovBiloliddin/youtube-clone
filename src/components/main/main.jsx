@@ -28,7 +28,7 @@ const Main = () => {
 
       <Box>
         <Container maxWidth={"90%"}>
-          <Typography variant="h4" fontWeight={"bold"}>
+          <Typography m={2} variant="h4" fontWeight={"bold"}>
             {selectedCategory}{" "}
             <span style={{ color: colors.secondary }}>Videos</span>
           </Typography>
